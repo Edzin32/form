@@ -8,20 +8,10 @@ function configurarData() {
 
 
     if (partesData[0].length != 4) {
-        data = new Date(partesData[2] + "-" + partesData[1] + "-" + partesData[0]); // remonto a data no formato yyyy/MM/dd
+        data = new Date(partesData[2] + "-" + partesData[1] + "-" + partesData[0]); 
     }
     var hoje = new Date();
     var idade = hoje.getFullYear() - parseInt(partesData[0]);
-
-   /* if(partesData[0]>hoje.getFullYear()){
-        alert('data invalida')
-    }else{
-        if(partesData[0]==hoje.getFullYear()&&partesData[1]>hoje.getMonth()&&partesData[2]>hoje.getDate()){
-            alert('data invalida')
-
-        }
-    }
-*/    
     
     if(hoje.getMonth()+1<parseInt(partesData[1])){
         idade--
