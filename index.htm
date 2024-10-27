@@ -1,0 +1,36 @@
+<!--
+Alicia (Bruno) Taiwo da silva Montesano Nº02
+Diego Souza Horvate Nº06 
+Edgar Lodula de Assis Nº07
+Tales Costa Caetano Silva Nº32 
+
+3°A
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Formulário</title>
+    <script src="form.js" defer></script>
+</head>
+
+<body>
+    <h1>Validação de formulário</h1>
+    <form>
+        Nome completo:<input type="text" onblur="verificaNome()"id="nomeUsuario" placeholder="Nome completo"><br>
+        Data de nascimento: <input type="date" id="datanasc" placeholder="DD/MM/AAAA" onblur="configurarData()"><br>
+        Idade: <input type="text" id="idade" disabled><br>
+        CPF:<input id="cpf" onblur="validaCPF()" placeholder="000.000.000-00"><br>
+        Telefone:<input placeholder="(00)00000-0000" id="tel"><br>
+        Nome de usuario:<input placeholder="User name"><br>
+        Senha: <input type="password" id="senha" title="Senha"><br>
+        Confirmar senha: <input type="password" id="Confirmasenha" title="Confirmar senha" onblur="confirmaSenha()"><br>
+       
+        <input type="submit" id="validation" title="Enviar" onclick="registro()">
+    </form>
+    
+</body>
+
+</html>
